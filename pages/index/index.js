@@ -7,8 +7,24 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    age : 18,
+    curNum : 1
   },
+
+  plusBtnMethod: function() {
+    console.log("加法");
+    this.setData ({
+      curNum : this.data.curNum + 1
+    })
+  },
+
+  jianFaBtnMethod: function () {
+    this.setData ({
+      curNum : this.data.curNum - 1
+    })
+  },
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
