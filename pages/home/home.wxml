@@ -1,2 +1,2 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<button open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">授权</button>
